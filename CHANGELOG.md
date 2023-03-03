@@ -1,5 +1,12 @@
 # @cuppachino/eslint-config
 
+## 0.2.1
+
+### Patch Changes
+
+- 8d87770: Attribution in package.json
+- ff29d77: important README addition
+
 ## 0.2.0
 
 ### Minor Changes
