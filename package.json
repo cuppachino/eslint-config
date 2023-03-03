@@ -31,6 +31,8 @@
   "scripts": {
     "new": "changeset",
     "ver": "changeset version",
-    "pub": "changeset publish"
-  }
+    "pub": "changeset publish",
+    "release": "pnpm ver && pnpm pub && pnpm publish --access public --publich-branch main"
+  },
+  "packageManager": "pnpm@7.28.0"
 }
