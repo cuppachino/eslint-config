@@ -1,5 +1,11 @@
 # @cuppachino/eslint-config
 
+## 0.2.4
+
+### Patch Changes
+
+- ba6b506: test release
+
 ## 0.2.2
 
 ### Patch Changes
