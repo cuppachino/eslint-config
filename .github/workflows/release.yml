@@ -42,7 +42,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Publish
+      # - name: Publish
         # If we have unpublished packages, publish them.
         # if: steps.changesets.outputs.hasChangesets == 'false'
         # run: pnpm publish --no-git-checks
