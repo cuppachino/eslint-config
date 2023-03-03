@@ -1,5 +1,11 @@
 # @cuppachino/eslint-config
 
+## 0.2.5
+
+### Patch Changes
+
+- e18e3b5: bump
+
 ## 0.2.4
 
 ### Patch Changes
