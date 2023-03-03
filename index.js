@@ -57,10 +57,8 @@ module.exports = {
      * -----------------------------------------------------------------------------------
      * You may change these rules to your liking, but I recommend keeping them as is.
      * This configuration is designed for nodejs environments with ESM module support.
-     *
      * -----------------------------------------------------------------------------------
      */
-    'template-curly-spacing': ['warn', 'always'],
     /**
      * 🗨️ Comment documentation rules
      */
@@ -141,6 +139,10 @@ module.exports = {
             group: 'builtin',
             position: 'after'
           },
+          /**
+           * ? This config doesn't include any react-specific rules, but
+           * for better interoperability with other configs, I've included it here.
+           */
           {
             pattern: 'react',
             group: 'builtin',
@@ -169,7 +171,11 @@ module.exports = {
     'import/resolver': {
       typescript: {
         alwaysTryTypes: true,
-        project: ['packages/*/tsconfig.json', 'template/*/tsconfig.json']
+        project: [
+          './tsconfig.json',
+          'apps/*/tsconfig.json',
+          'packages/*/tsconfig.json'
+        ]
       }
     },
     'jsdoc': {
