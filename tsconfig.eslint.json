@@ -6,8 +6,8 @@
     "noEmit": true
   },
   "include": [
-    "src",
-    "pkg",
+    "src/",
+    "pkg/",
     "./index.js"
   ]
 }

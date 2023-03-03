@@ -24,6 +24,23 @@
 pnpm add -D eslint @cuppachino/eslint-config
 ```
 
+Create a `tsconfig.eslint.json` at the root of your project and extend your own `tsconfig.json`:
+
+```json
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": [
+    "pkg/",
+    // "src/",
+    //  "./vite.config.ts",
+    // "./apps/*/tsconfig.json"
+  ],
+}
+```
+
 ### Configure
 
 Create a `.eslintrc.cjs` file in the root of your project and extend the config:
@@ -43,14 +60,27 @@ module.exports = {
   parserOptions: {
     tsconfigRootDir: __dirname,
     project: [
-      './tsconfig.eslint.json',
+      './tsconfig.eslint.json', // REQUIRED
       './apps/*/tsconfig.json',
       './packages/*/tsconfig.json'
     ]
   },
+  settings: {
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+        project: [
+          './tsconfig.eslint.json', // REQUIRED
+          './apps/*/tsconfig.json',
+          './packages/*/tsconfig.json'
+        ]
+      }
+    }
+  },
 
+  /* ⭐ Override rules here */
   rules: {
-    // ... override rules here
+    // ...
   }
 }
 ```
