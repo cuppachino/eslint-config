@@ -28,7 +28,7 @@ jobs:
           cache: pnpm
 
       - name: Require Changeset
-        run: npx changeset status --since origin/main
+        run: npx changeset status --since main
 
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
