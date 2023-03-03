@@ -1,5 +1,11 @@
 # @cuppachino/eslint-config
 
+## 0.1.3
+
+### Patch Changes
+
+- 0fc864b: fix(deps): update dependency eslint-plugin-jsdoc to v40
+
 ## 0.1.2
 
 ### Patch Changes
