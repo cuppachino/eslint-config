@@ -1,5 +1,11 @@
 # @cuppachino/eslint-config
 
+## 0.2.0
+
+### Minor Changes
+
+- ed25b29: removed a curly-spacing rule. It wasn't intended to be included. Besides comments, I don't want any code style ruling performed by eslint
+
 ## 0.1.4
 
 ### Patch Changes
