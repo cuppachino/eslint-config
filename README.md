@@ -1,9 +1,9 @@
 # @cuppachino/eslint-config
 
 ![Discord](https://img.shields.io/discord/1080840305441525766?color=5865f2&label=&logo=discord&logoColor=ffffff)
-![License](https://img.shields.io/github/license/cuppachino/eslint-config)
+[![Release](https://github.com/cuppachino/eslint-config/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/cuppachino/eslint-config/actions/workflows/release.yml)
+![License](https://img.shields.io/github/license/cuppachino/eslint-config?color=ffca4a)
 ![npm (scoped)](https://img.shields.io/npm/v/@cuppachino/eslint-config?color=%23fb3e44)
-![npm bundle size (scoped version)](https://img.shields.io/bundlephobia/min/@cuppachino/eslint-config/latest?color=ffca4a&label=min)
 ![npm](https://img.shields.io/npm/dw/@cuppachino/eslint-config)
 
 - [x] **Extendable**... fully customized [ESLint](https://eslint.org/) configuration
