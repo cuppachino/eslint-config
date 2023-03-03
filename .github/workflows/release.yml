@@ -30,17 +30,19 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
-      # - name: Require Changeset
-      #   run: pnpm changeset status --since main
+      - name: Require Changeset
+        run: pnpm changeset status --since main
 
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
+        with:
+          publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish
         # If we have unpublished packages, publish them.
-        if: steps.changesets.outputs.hasChangesets == 'true' && steps.changesets.outputs.published == 'false'
-        run: pnpm release
+        if: steps.changesets.outputs.hasChangesets == 'false'
+        run: pnpm publish --no-git-checks
