@@ -27,11 +27,11 @@ jobs:
           node-version: 16.x
           cache: pnpm
 
-      - name: Require Changeset
-        run: npx changeset status --since main
-
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Require Changeset
+        run: pnpm changeset status --since main
 
       - name: Create Release Pull Request or Publish
         id: changesets
