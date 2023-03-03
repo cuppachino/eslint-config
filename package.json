@@ -32,7 +32,7 @@
     "new": "changeset",
     "ver": "changeset version",
     "pub": "changeset publish",
-    "release": "pnpm ver && pnpm pub && pnpm publish --access public --publich-branch main"
+    "release": "pnpm ver && pnpm pub && pnpm publish --access public --publish-branch main"
   },
   "packageManager": "pnpm@7.28.0"
 }
