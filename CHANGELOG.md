@@ -1,5 +1,11 @@
 # @cuppachino/eslint-config
 
+## 0.1.4
+
+### Patch Changes
+
+- 12e6a55: update readme. need to prevent direct changes to main without changesets.
+
 ## 0.1.3
 
 ### Patch Changes
