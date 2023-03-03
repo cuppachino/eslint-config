@@ -37,6 +37,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+      - name: Block without changesets
+        run: pnpm changeset status --since=main
+
       - name: Publish
         # If we have unpublished packages, publish them.
         if: steps.changesets.outputs.published == 'false'
