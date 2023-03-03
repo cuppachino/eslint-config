@@ -28,7 +28,8 @@
     "prettier",
     "lint",
     "format",
-    "changesets"
+    "changesets",
+    "config"
   ],
   "files": [
     "index.js",
