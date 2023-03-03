@@ -1,5 +1,11 @@
 # @cuppachino/eslint-config
 
+## 0.2.2
+
+### Patch Changes
+
+- b857115: every published change requires a changeset
+
 ## 0.2.1
 
 ### Patch Changes
