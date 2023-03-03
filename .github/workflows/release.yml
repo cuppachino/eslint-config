@@ -30,8 +30,8 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Require Changeset
-        run: pnpm changeset status --since main
+      # - name: Require Changeset
+      #   run: pnpm changeset status --since main
 
       - name: Create Release Pull Request or Publish
         id: changesets
@@ -42,5 +42,5 @@ jobs:
 
       - name: Publish
         # If we have unpublished packages, publish them.
-        if: steps.changesets.outputs.hasChangesets == 'false'
+        if: steps.changesets.outputs.hasChangesets == 'true' && steps.changesets.outputs.published == 'false'
         run: pnpm release

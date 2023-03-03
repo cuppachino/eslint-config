@@ -54,7 +54,7 @@
   "scripts": {
     "new": "changeset",
     "version-packages": "changeset version",
-    "release": "changeset publish"
+    "release": "pnpm publish --access public --publish-branch main"
   },
   "packageManager": "pnpm@7.28.0"
 }
