@@ -86,7 +86,7 @@ extends: [
 
 Make sure to use your workspace's version of TypeScript and your `tsconfig.json` for type checking!
 
-![typescript-workspace-version](./typescript-use-workspace-version.png)
+![typescript-workspace-version](https://github.com/cuppachino/eslint-config/blob/faaed332bd057b3f1b22eb875e2d10e66d4c1cdc/typescript-use-workspace-version.png)
 
 ### ESLint ![npm (prod) dependency version (scoped)](https://img.shields.io/npm/dependency-version/@cuppachino/eslint-config/eslint?style=flat-square&label)
 
