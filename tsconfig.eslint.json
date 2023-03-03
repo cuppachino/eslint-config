@@ -5,5 +5,9 @@
     /* This config is not meant for production! */
     "noEmit": true
   },
-  "include": ["pkg", "./index.js"]
+  "include": [
+    "src",
+    "pkg",
+    "./index.js"
+  ]
 }

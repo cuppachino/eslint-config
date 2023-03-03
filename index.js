@@ -9,6 +9,10 @@ module.exports = {
     'plugin:jsdoc/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
+    /**
+     * ! Always include `eslint-config-prettier` last.
+     * note: reference by "prettier"
+     */
     'prettier'
   ],
   parser: '@typescript-eslint/parser',
@@ -17,10 +21,26 @@ module.exports = {
     lib: ['es2018'],
     sourceType: 'module',
     tsconfigRootDir: __dirname,
+    /**
+     * ! Be careful using wide glob patterns here.
+     * If you have a large monorepo, this can cause performance issues
+     * and inconsistent results during development.
+     */
     project: [
+      /**
+       * ? Unfortunately, I have to include a default tsconfig.
+       * tsconfig.base.json should be suitable for all projects, node or browser.
+       * tsconfig.eslint.json extends that config, but will not emit any files.
+       * If you're building your project and not seeing any files, you're
+       * probably referencing the wrong tsconfig.
+       */
       './tsconfig.eslint.json',
+      /**
+       * ? I've included a common turbo repo structure here for reference.
+       * You may need to extend/override this list in your own configuration.
+       */
       './packages/*/tsconfig.json',
-      './template/*/tsconfig.json'
+      './apps/*/tsconfig.json'
     ],
     projectFolderIgnoreList: [
       '**/node_modules',
