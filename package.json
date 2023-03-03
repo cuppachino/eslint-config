@@ -7,6 +7,29 @@
   "publishConfig": {
     "access": "public"
   },
+  "author": "Jacob Bergholtz <cuppachino.dev@gmail.com> (https://github.com/cuppachino/)",
+  "description": "Lint TypeScript with ESLint, format with Prettier. Type-safe. Zero-conflict.",
+  "bugs": {
+    "url": "https://github.com/cuppachino/eslint-config/issues",
+    "email": "cuppachino.dev+eslint-config@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cuppachino/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslint-config-prettier",
+    "jsdoc",
+    "tsdoc",
+    "typescript",
+    "prettier",
+    "lint",
+    "format",
+    "changesets"
+  ],
   "files": [
     "index.js",
     ".prettierrc",
