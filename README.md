@@ -28,6 +28,8 @@ pnpm add -D eslint @cuppachino/eslint-config
 
 Create a `.eslintrc.cjs` file in the root of your project and extend the config:
 
+> or `.eslintrc.js` or `.eslintrc.json`
+
 ```js
 module.exports = {
   
