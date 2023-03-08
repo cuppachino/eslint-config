@@ -26,7 +26,7 @@ pnpm add -D eslint @cuppachino/eslint-config
 
 Create a `tsconfig.eslint.json` at the root of your project and extend your own `tsconfig.json`:
 
-```json
+```jsonc
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
@@ -126,7 +126,7 @@ To highlight code **quality** errors in vscode, you can use [dbaeumer.vscode-esl
 
 Add the following scripts to your package.json for usage in your pipeline:
 
-```json
+```jsonc
 {
   "scripts": {
     "lint:check": "eslint",
@@ -141,7 +141,7 @@ Follow the setup directions for [rvest.vs-code-prettier-eslint](https://github.c
 
 These scripts can be used to format your entire project:
 
-```json
+```jsonc
 {
   "scripts": {
     "format": "prettier --check .",
