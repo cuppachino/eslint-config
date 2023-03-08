@@ -57,5 +57,5 @@
     "version-packages": "changeset version",
     "release": "changeset publish"
   },
-  "packageManager": "pnpm@7.28.0"
+  "packageManager": "pnpm@7.29.1"
 }
