@@ -1,5 +1,11 @@
 # @cuppachino/eslint-config
 
+## 0.2.6
+
+### Patch Changes
+
+- 4bf2464: Update pnpm to v7.29.1
+
 ## 0.2.5
 
 ### Patch Changes
