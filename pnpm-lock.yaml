@@ -9,7 +9,7 @@ specifiers:
   eslint-config-prettier: ^8.5.0
   eslint-import-resolver-typescript: ^3.5.3
   eslint-plugin-import: ^2.27.5
-  eslint-plugin-jsdoc: ^40.0.0
+  eslint-plugin-jsdoc: ^45.0.0
   eslint-plugin-tsdoc: ^0.2.17
   prettier: ^2.8.4
   typescript: ^4.9.5
@@ -22,7 +22,7 @@ dependencies:
   eslint-config-prettier: 8.6.0_eslint@8.35.0
   eslint-import-resolver-typescript: 3.5.3_yckic57kx266ph64dhq6ozvb54
   eslint-plugin-import: 2.27.5_tqrcrxlenpngfto46ddarus52y
-  eslint-plugin-jsdoc: 40.0.1_eslint@8.35.0
+  eslint-plugin-jsdoc: 45.0.0_eslint@8.35.0
   eslint-plugin-tsdoc: 0.2.17
 
 devDependencies:
@@ -244,13 +244,13 @@ packages:
       prettier: 2.8.4
     dev: true
 
-  /@es-joy/jsdoccomment/0.36.1:
-    resolution: {integrity: sha512-922xqFsTpHs6D0BUiG4toiyPOMc8/jafnWKxz1KWgS4XzKPy2qXf1Pe6UFuNSCQqt6tOuhAWXBNuuyUhJmw9Vg==}
-    engines: {node: ^14 || ^16 || ^17 || ^18 || ^19}
+  /@es-joy/jsdoccomment/0.39.4:
+    resolution: {integrity: sha512-Jvw915fjqQct445+yron7Dufix9A+m9j1fCJYlCo1FWlRvTxa3pjJelxdSTdaLWcTwRU6vbL+NYjO4YuNIS5Qg==}
+    engines: {node: '>=16'}
     dependencies:
       comment-parser: 1.3.1
       esquery: 1.5.0
-      jsdoc-type-pratt-parser: 3.1.0
+      jsdoc-type-pratt-parser: 4.0.0
     dev: false
 
   /@eslint/eslintrc/2.0.0:
@@ -498,7 +498,7 @@ packages:
       debug: 4.3.4
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.3.8
+      semver: 7.5.1
       tsutils: 3.21.0_typescript@4.9.5
       typescript: 4.9.5
     transitivePeerDependencies:
@@ -519,7 +519,7 @@ packages:
       eslint: 8.35.0
       eslint-scope: 5.1.1
       eslint-utils: 3.0.0_eslint@8.35.0
-      semver: 7.3.8
+      semver: 7.5.1
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -577,6 +577,11 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       color-convert: 2.0.1
+
+  /are-docs-informative/0.0.2:
+    resolution: {integrity: sha512-ixiS0nLNNG5jNQzgZJNoUpBKdo9yTYZMGJ+QgT2jmjR7G7+QHRCc4v6LQ3NgE7EBJq+o0ams3waJwkrlBom8Ig==}
+    engines: {node: '>=14'}
+    dev: false
 
   /argparse/1.0.10:
     resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
@@ -1084,19 +1089,20 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-plugin-jsdoc/40.0.1_eslint@8.35.0:
-    resolution: {integrity: sha512-KkiRInury7YrjjV5aCHDxwsPy6XFt5p2b2CnpDMITnWs8patNPf5kj24+VXIWw45kP6z/B0GOKfrYczB56OjQQ==}
-    engines: {node: ^14 || ^16 || ^17 || ^18 || ^19}
+  /eslint-plugin-jsdoc/45.0.0_eslint@8.35.0:
+    resolution: {integrity: sha512-l2+Jcs/Ps7oFA+SWY+0sweU/e5LgricnEl6EsDlyRTF5y0+NWL1y9Qwz9PHwHAxtdJq6lxPjEQWmYLMkvhzD4g==}
+    engines: {node: '>=16'}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0
     dependencies:
-      '@es-joy/jsdoccomment': 0.36.1
+      '@es-joy/jsdoccomment': 0.39.4
+      are-docs-informative: 0.0.2
       comment-parser: 1.3.1
       debug: 4.3.4
       escape-string-regexp: 4.0.0
       eslint: 8.35.0
       esquery: 1.5.0
-      semver: 7.3.8
+      semver: 7.5.1
       spdx-expression-parse: 3.0.1
     transitivePeerDependencies:
       - supports-color
@@ -1744,8 +1750,8 @@ packages:
       argparse: 2.0.1
     dev: false
 
-  /jsdoc-type-pratt-parser/3.1.0:
-    resolution: {integrity: sha512-MgtD0ZiCDk9B+eI73BextfRrVQl0oyzRG8B2BjORts6jbunj4ScKPcyXGTbB6eXL4y9TzxCm6hyeLq/2ASzNdw==}
+  /jsdoc-type-pratt-parser/4.0.0:
+    resolution: {integrity: sha512-YtOli5Cmzy3q4dP26GraSOeAhqecewG04hoO8DY56CH4KJ9Fvv5qKWUCCo3HZob7esJQHCv6/+bnTy72xZZaVQ==}
     engines: {node: '>=12.0.0'}
     dev: false
 
@@ -2260,6 +2266,14 @@ packages:
 
   /semver/7.3.8:
     resolution: {integrity: sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      lru-cache: 6.0.0
+    dev: false
+
+  /semver/7.5.1:
+    resolution: {integrity: sha512-Wvss5ivl8TMRZXXESstBA4uR5iXgEN/VC5/sOcuXdVLzcdkz4HWetIoRfG5gb5X+ij/G9rw9YoGn3QoQ8OCSpw==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
